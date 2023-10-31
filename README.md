@@ -46,66 +46,66 @@ Algunas IPS para puertas de enlace utilizadas comúnmente incluyen:Firewalls de 
 ## Funcionalidad de la máscaras de red y cómo se calculan según la clasificación de IP's.
 Las máscaras de red son utilizadas en las direcciones IP para dividir las redes en subredes o agrupar múltiples redes en una red más grande. El formato y la longitud de la máscara de red varían según la clasificación de las direcciones IP (IPv4 o IPv6).
 
-![Mascara](./Fotos/mascaradered.png)
+![Mascara](mascaradered.png)
 
 La máscara de red se calcula de acuerdo con la clase de dirección IP que está utilizando y la cantidad de bits que se asignan para identificar la red y los dispositivos en esa red.
 
-![direccion](./Fotos/direccion.png)
+![direccion](direccion.png)
 
 ## VLAN (qué es y para que sirve, configuración en Packet Tracer)
 Es una tecnología que sirve para dividir una red de computadoras en grupos más pequeños y separados de manera lógica, aunque estén físicamente conectados a la misma red física. Esto se hace para mejorar la seguridad, el rendimiento y la administración de la red.
 
-![VLAN](./Fotos/valn.png)
+![VLAN](valn.png)
 
 ## Configuración de red en máquinas virtuales. Diferentes configuraciones de los adaptadores de red.
 
 * **Adaptador de red de tipo puente  (Bridge Adaparter)**:
   Este permite tener una **IP** en la maquina virtual propia y otra en la maquina fisica, en la misma red. 
 
-  ![adaptadorpuente](./Fotos/Adaptadorpuente.png)
+  ![adaptadorpuente](Adaptadorpuente.png)
 
 * **Adaptador de red NAT (Network Address Translation)**: En este modo, la máquina virtual utiliza la dirección IP del host para todas las comunicaciones con la red externa. El hipervisor realiza el direccionamiento NAT.   
-![rednat](./Fotos/Rednat.png)
+![rednat](Rednat.png)
 
 * **Adaptador de red interna (Internal Network)**: En este modo puede comunicarse con maquinas virtuales en la misma maquina fisica, pero no tienen acceso a la red.
-![redinet](./Fotos/redinet.png)
+![redinet](redinet.png)
 
 * **Modo Nat (Network Address Translation)**: Este modo comparta la direccion IP del host para acceder a la red externa, generalmente a Internet.  
-![nat](./Fotos/nat.png)
+![nat](nat.png)
 
 ## Configuración de red en Windows
 Para poder configurar la **IP** tenemos de ir al escitorio y luego le damos al icono de **Ethernet**.
 
-![iconodeethernet](./Fotos/IconoEthernet.png)
+![iconodeethernet](IconoEthernet.png)
 
 Luego le damos a **Abrir Configuración...** y accedemos.
 
-![Abrir](./Fotos/abrir.png)
+![Abrir](abrir.png)
 
 Luego le damos **Cambiar opciones del Adaptador**, accedemos
 
-![cambair](./Fotos/cambiar.png)
+![cambair](cambiar.png)
 
 Luego damos click derecho en el adaptador de red, ya sea wifi o Ethernet y le damos en **Propiedades**.
 
-![propiedades](./Fotos/Propiedades.png)
+![propiedades](Propiedades.png)
 
 Luego le damos doble click a **IPv4**.
 
-![IPv4](./Fotos/IPv4.png)
+![IPv4](IPv4.png)
 
 Y cambiamos  la **IP**, **Mascara de subred**, **Puerta de enlace** y **El DNS**.
 
-![Puertadeenlace](./Fotos/Puertadeenlace.png)
+![Puertadeenlace](Puertadeenlace.png)
 
 Para ver la configuracion, abrimos el **CMD** y ponemos el comando **ipconfig /all**.
 
-![cmd](./Fotos/cmd.png)
+![cmd](cmd.png)
 
 ## Configuración de red en Linux (Debian 16.04).
 Para poder configurar la direccion **IP**, abrimos el **Terminal** y ponemos el comando **sudo nano /etc/network/interfaces/**. 
 
-![comando1](./Fotos/comando1.png)
+![comando1](comando1.png)
 
 Luego accedemos y ponemos: 
 + **auto enp0s3**
@@ -116,7 +116,7 @@ Luego accedemos y ponemos:
 
 Lo guardamos usuando **Crtl + o**
 
-![ips](./Fotos/ips.png)
+![ips](ips.png)
 
 Luego ponemos este comando, para resetear la configuración IP y se ponga correctamente **sudo service networking restart**.
 
