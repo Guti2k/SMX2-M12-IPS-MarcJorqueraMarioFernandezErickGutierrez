@@ -15,7 +15,7 @@
 |                         | Se inicia con un número entre 0.0.0.0 y 127.255.255.  | Se inicia con un número entre 128.0.0.0 y 191.255.255.255         | Se inicia con un número entre 192.0.0.0 y 223.255.255.255 |Se inicia con un número entre 224.0.0.0 y 239.255.255.255             |
 |                            | Ejemplo 10.0.0.2 | Ejemplo 172.24.0.2       | Ejemplo 192.168.0.10 |               |
 |                            | 192.0.0.0 - 223.255.255.255 | 192.168.0.10     | 110 en los tres primeros bits |            |
-|                             | Empiezan cono 0 en el primer bit            |Comienzan con 10 en los dos primeros bit            |     Comienzan con 110 en los tres primeros bits                      |    Comienzan con 1110 en los cuatro primeros bits            |
+|                             | Empiezan con 0 en el primer bit            |Comienzan con 10 en los dos primeros bit            |     Comienzan con 110 en los tres primeros bits                      |    Comienzan con 1110 en los cuatro primeros bits            |
 
 ### Diferencia entre IPv6 
 En IPv6, a diferencia de IPv4, ya no se utilizan clases, se dividen en segmentos específicos que tienen funciones diferentes.
@@ -122,7 +122,7 @@ Luego ponemos este comando, para resetear la configuración IP y se ponga correc
 
 ![ipssss](ipsss.png)
 
-Luego ponemos este comando **ifconfig** para ver la configuración IP de la redñ.
+Luego ponemos este comando **ifconfig** para ver la configuración IP de la red.
 
 ![red](red.png)
 
